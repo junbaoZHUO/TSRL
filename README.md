@@ -1,13 +1,13 @@
 # TSRL
 codes release for our paper "Zero-shot Video Classification with Appropriate Web and Task Knowledge Transfer"
 
-python 3.8.10
-pytorch 1.9.0
-torchvision 0.10.0
-numpy 1.20.3
-pillow 8.4.0
-networkx 2.6.3
-pot 0.8.1.0
+python 3.8.10<br />
+pytorch 1.9.0<br />
+torchvision 0.10.0<br />
+numpy 1.20.3<br />
+pillow 8.4.0<br />
+networkx 2.6.3<br />
+pot 0.8.1.0<br />
 
 ```
 python train.py  --gpu 3 --learning_rate 0.00002 --split_ind 0 --datadir oly --dataset oly --label_num 16 --num_class 163 --batch_size 128 --epoch 5 --mode GCN+INIT+SIM
