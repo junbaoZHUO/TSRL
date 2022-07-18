@@ -23,6 +23,8 @@ pot 0.8.2<br />
 
 
 ## Training scripts for GoogLeNet based implementation
+### --setting: inductive or transductive or generalized_transductive
+### --mode: INIT or GCN_ONLY or GCN+INIT or GCN+INIT+SIM
 ```
 python train.py  --gpu 3 --learning_rate 0.00002 --split_ind 0 --datadir oly --dataset oly --label_num 16 --num_class 163 --batch_size 128 --epoch 5 --mode GCN+INIT+SIM
 ```
