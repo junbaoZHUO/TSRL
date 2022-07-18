@@ -12,15 +12,17 @@ networkx 2.6.3<br />
 pot 0.8.1.0<br />
 
 ## Enviroment for CSWin based implementation
-python 3.7.11 />
-pytorch 1.4.0 />
-torchvision 0.5.0 />
-numpy 1.20.3 />
-pillow 8.4.0 />
-networkx 2.6.3 />
-pot 0.8.2 />
+python 3.7.11<br />
+pytorch 1.4.0<br />
+torchvision 0.5.0<br />
+numpy 1.20.3<br />
+pillow 8.4.0<br />
+networkx 2.6.3<br />
+pot 0.8.2<br />
 
 
+
+## Training scripts for GoogLeNet based implementation
 ```
 python train.py  --gpu 3 --learning_rate 0.00002 --split_ind 0 --datadir oly --dataset oly --label_num 16 --num_class 163 --batch_size 128 --epoch 5 --mode GCN+INIT+SIM
 ```
