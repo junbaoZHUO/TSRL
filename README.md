@@ -29,7 +29,7 @@ pot 0.8.2<br />
 python train.py  --gpu 3 --learning_rate 0.00002 --split_ind 0 --datadir oly --dataset oly --label_num 16 --num_class 163 --batch_size 128 --epoch 5 --mode GCN+INIT+SIM
 ```
 ```
-python train.py  --gpu 6 --learning_rate 0.00001 --split_ind 0 --datadir ucf101 --dataset ucf101 --label_num 101 --num_class 1320 --batch_size 128 --epoch 5 --mode GCN+INIT+SIM --setting transductive --bnm 10
+python train.py  --gpu 6 --learning_rate 0.000015 --split_ind 0 --datadir ucf101 --dataset ucf101 --label_num 101 --num_class 1320 --batch_size 128 --epoch 5 --mode GCN+INIT+SIM --setting transductive --bnm 10
 ```
 ```
 python train.py  --gpu 7 --learning_rate 0.0001 --split_ind 0 --datadir hmdb51 --dataset hmdb51 --label_num 51 --num_class 847 --batch_size 128 --epoch 5 --mode GCN+INIT+SIM --setting generalized_transductive --bnm 50
