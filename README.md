@@ -1,5 +1,4 @@
-# TSRL
-codes release for our paper "Zero-shot Video Classification with Appropriate Web and Task Knowledge Transfer"
+# Codes release for our paper "Zero-shot Video Classification with Appropriate Web and Task Knowledge Transfer"
 
 
 ## Enviroment for GoogLeNet based implementation
