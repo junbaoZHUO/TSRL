@@ -36,3 +36,21 @@ python train.py  --gpu 7 --learning_rate 0.0001 --split_ind 0 --datadir hmdb51 -
 ```
 python train.py  --gpu 5 --learning_rate 0.0005 --split_ind 0 --datadir fcvid --dataset fcvid --label_num 238 --num_class 2066 --batch_size 128 --epoch 20
 ```
+
+## Training scripts for CSWin based implementation
+### --setting: inductive or transductive or generalized_transductive
+### --mode: INIT or GCN_ONLY or GCN+INIT or GCN+INIT+SIM
+```
+python train.py --dataset oly --gpu 0 --datadir oly_cs --split_all 50  --topK 15  --learning_rate 0.0003  --label_num 16 --num_class 140 --batch_size 256 --epoch 10 --weight_decay 0.0001 --mode GCN+INIT+SIM
+```
+```
+python train.py --topK 10 --gpu 2 --learning_rate 0.001 --datadir hmdb51_cs --dataset hmdb51 --label_num 51 --num_class 361 --batch_size 256 --epoch 10 --mode GCN+INIT+SIM --setting transductive --bnm 15
+```
+
+```
+python train.py --topK 15 --gpu 1 --dataset ucf101 --learning_rate 0.00001 --datadir ucf101_cs --label_num 101 --num_class 2546 --batch_size 1024 --epoch 5  --split_all 50 --bnm 50 --setting generalized_transductive --mode GCN+INIT+SIM --weight_decay 0.0001
+```
+
+```
+python train.py --topK 10 --gpu 3 --dataset fcvid --learning_rate 0.00001 --datadir fcvid_cs --label_num 238 --num_class 1680 --batch_size 1408 --epoch 5  --split_all 1  --weight_decay 0.0001 --mode GCN+INIT+SIM
+```
