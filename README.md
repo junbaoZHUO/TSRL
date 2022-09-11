@@ -1,3 +1,4 @@
+# Codes for "Uncertainty Modeling for Robust Domain Adaptation Under Noisy Environments" is moved to https://github.com/junbaoZHUO/UncertaintyRank.
 # Codes release for our paper "Zero-shot Video Classification with Appropriate Web and Task Knowledge Transfer"
 
 
